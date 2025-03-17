@@ -44,7 +44,7 @@ jobs:
         id: current-version
         uses: WyriHaximus/github-action-get-previous-tag@v1
         with:
-          fallback: "1.0.0"
+          fallback: "1.0.1"
 
       - name: 🖨 Print Current Version
         run: |
@@ -68,18 +68,18 @@ jobs:
       - name: 📝 Write Version to File
         uses: jacobtomlinson/gha-find-replace@v3
         with:
-          find: "1.0.0"
+          find: "1.0.1"
           replace: ${{ steps.next-version.outputs.version }}
           regex: false
-          include: PdArchEcsCoreDebugGenerator/PdArchEcsCoreDebugGenerator.csproj
+          include: PdArchEcsCoreSourceGenerator/PdArchEcsCoreSourceGenerator.csproj
 
       - name: 📦 Build
-        run: dotnet build PdArchEcsCoreDebugGenerator/PdArchEcsCoreDebugGenerator.csproj -c Release
+        run: dotnet build PdArchEcsCoreSourceGenerator/PdArchEcsCoreSourceGenerator.csproj -c Release
 
       - name: 🔎 Get Package Path
         id: package-path
         run: |
-          package=$(find ./PdArchEcsCoreDebugGenerator/nupkg -name "*.nupkg")
+          package=$(find ./PdArchEcsCoreSourceGenerator/nupkg -name "*.nupkg")
           echo "package=$package" >> "$GITHUB_OUTPUT"
           echo "📦 Found package: $package"
 
