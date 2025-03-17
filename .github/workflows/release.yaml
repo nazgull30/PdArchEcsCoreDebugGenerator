@@ -71,15 +71,15 @@ jobs:
           find: "1.0.1"
           replace: ${{ steps.next-version.outputs.version }}
           regex: false
-          include: PdArchEcsCoreSourceGenerator/PdArchEcsCoreSourceGenerator.csproj
+          include: PdArchEcsCoreDebugGenerator/PdArchEcsCoreDebugGenerator.csproj
 
       - name: 📦 Build
-        run: dotnet build PdArchEcsCoreSourceGenerator/PdArchEcsCoreSourceGenerator.csproj -c Release
+        run: dotnet build PdArchEcsCoreDebugGenerator/PdArchEcsCoreDebugGenerator.csproj -c Release
 
       - name: 🔎 Get Package Path
         id: package-path
         run: |
-          package=$(find ./PdArchEcsCoreSourceGenerator/nupkg -name "*.nupkg")
+          package=$(find ./PdArchEcsCoreDebugGenerator/nupkg -name "*.nupkg")
           echo "package=$package" >> "$GITHUB_OUTPUT"
           echo "📦 Found package: $package"
 

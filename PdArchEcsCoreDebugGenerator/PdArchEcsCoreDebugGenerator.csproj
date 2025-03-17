@@ -9,7 +9,7 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <Nullable>disable</Nullable>
         <CopyAllFiles>true</CopyAllFiles>
-        <RootNamespace>PdArchEcsCoreSourceGenerator</RootNamespace>
+        <RootNamespace>PdArchEcsCoreDebugGenerator</RootNamespace>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <OutputPath>./nupkg</OutputPath>
