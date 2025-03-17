@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdArchEcsCoreDebugGenerator.Tests", "PdArchEcsCoreDebugGenerator.Tests.csproj", "{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{68C53BEA-67BE-4B3B-B100-94ED8B5748FF}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
